@@ -1,6 +1,8 @@
-<!-- nav -->
+<!-- ============================= banner and nav =========== -->
+<!-- =============nav-===================== -->
+
 <nav
-  class="flex flex-row md:items-center flex-wrap justify-between items-center pt-5 relative font-sans"
+  class="flex flex-row px-8 md:max-w-7xl md:mx-auto md:items-center flex-wrap justify-between items-center pt-5 relative font-sans"
 >
   <!-- logo -->
   <img src="./images/logo-bookmark.svg" alt="logo" />
@@ -60,3 +62,45 @@
     </section>
   </div>
 </nav>
+
+<!--============== banner=================== -->
+<div class="max-w-lg px-8 mx-auto md:max-w-7xl md:mx-auto relative">
+  <div class="grid grid-cols-1 gap-14 mt-20 md:grid-cols-2 md:items-center">
+    <!-- blue background -->
+    <section
+      class="h-44 w-[100%] md:w-[50%] md:h-64 rounded-l-full bg-softBlue absolute -right-40 top-16 md:top-20 lg:top-32 -z-10"
+    ></section>
+    <!-- hero -->
+    <section class="border border-black md:order-2">
+      <img src="./images/illustration-hero.svg" alt="" class="w-full" />
+    </section>
+
+    <!-- banner about -->
+    <section class="text-center md:text-left md:order-1">
+      <h1
+        class="text-3xl text-veryDarkBlue md:leading-tight leading-tight md:text-5xl font-medium"
+      >
+        A Simple Bookmark Manager
+      </h1>
+      <p class="leading-normal mt-5 text-grayishBlue">
+        A clean and simple interface to organize your favourite websites. Open a
+        new browser tab and see your sites load instantly. Try it for free.
+      </p>
+
+      <section
+        class="flex flex-row justify-center md:justify-start gap-x-5 mt-8"
+      >
+        <button
+          class="bg-softBlue shadow-lg text-white rounded-lg font-medium py-3 px-6 hover:bg-white hover:border-2 hover:border-softBlue hover:text-softBlue transition-all duration-200"
+        >
+          Get it on Chrome
+        </button>
+        <button
+          class="bg-gray-50 shadow-xl text-grayishBlue rounded-lg font-medium py-3 px-6 hover:bg-white hover:border-2 hover:border-veryDarkBlue hover:text-veryDarkBlue transition-all duration-200"
+        >
+          Get it on Firefox
+        </button>
+      </section>
+    </section>
+  </div>
+</div>
