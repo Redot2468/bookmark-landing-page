@@ -1,0 +1,48 @@
+<div class="bg-softBlue py-20 text-center">
+  <div class="max-w-md mx-auto px-8 md:max-w-3xl">
+    <p class="text-gray-50 font-light tracking-widest">
+      35,000+ already joined
+    </p>
+    <h2
+      class="text-2xl md:max-w-lg mx-auto md:text-3xl mt-8 text-white md:leading-tight leading-tight font-medium"
+    >
+      Stay up-to-date with what we’re doing
+    </h2>
+
+    <!-- form -->
+    <form
+      action=""
+      class="flex flex-col md:flex-row gap-y-6 gap-x-6 justify-center md:items-center mt-10 md:w-full"
+    >
+      <div class="md:w-[50%]">
+        <div
+          class="flex flex-row items-center justify-between bg-white py-3 rounded-md px-4"
+        >
+          <input
+            type="email"
+            name="email"
+            class="placeholder:text-gray-300 w-[70%] text-grayishBlue focus:outline-0 px-4 text-sm"
+            id="email"
+            placeholder="Enter your email address"
+            required
+          />
+          <section class="hidden error__logo">
+            <img src="./images/icon-error.svg" alt="" />
+          </section>
+        </div>
+        <p
+          class="hidden error__message text-left rounded-b-lg text-white text-xs bg-softRed py-2 px-4"
+        ></p>
+      </div>
+      <!-- button -->
+      <section>
+        <button
+          type="submit"
+          class="w-full md: bg-softRed shadow-lg text-white rounded-lg font-medium py-3 px-6 hover:bg-white hover:border-2 hover:border-softRed hover:text-softRed transition-all duration-200"
+        >
+          Contact Us
+        </button>
+      </section>
+    </form>
+  </div>
+</div>
