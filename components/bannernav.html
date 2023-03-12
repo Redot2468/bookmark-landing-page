@@ -2,32 +2,33 @@
 <!-- =============nav-===================== -->
 
 <nav
-  class="flex flex-row px-8 md:max-w-7xl md:mx-auto md:items-center flex-wrap justify-between items-center pt-5 relative font-sans"
+  class="nav px-8 flex flex-row md:max-w-7xl md:mx-auto md:items-center md:px-8 flex-wrap justify-between items-center pt-5 font-sans"
 >
   <!-- logo -->
-  <img src="./images/logo-bookmark.svg" alt="logo" />
+
+  <img src="./images/logo-bookmark.svg" class="main__logo-default" alt="logo" />
 
   <!-- menu icons-->
   <section class="md:hidden">
-    <img src="./images/icon-hamburger.svg" alt="menu" />
+    <img src="./images/icon-hamburger.svg" alt="menu" class="logo__menu-open" />
   </section>
 
   <!-- menu -->
   <div
-    class="bg-veryDarkBlue md:items-center bg-opacity-90 pt-8 md:pt-0 px-8 md:px-0 h-screen w-full hidden absolute top-0 md:contents"
+    class="main__nav bg-veryDarkBlue hidden md:items-center pt-8 md:pt-0 px-8 md:px-0 h-screen w-full md:contents"
   >
     <!-- logos -->
     <section class="flex flex-row justify-between md:hidden">
-      <img src="./images/logo2.svg" alt="" class="" />
+      <img src="./images/logo2.svg" alt="" class="main__logo-edit" />
       <img
         src="./images/icon-close.svg"
         alt="close"
-        class="w-4 h-4 cursor-pointer"
+        class="w-4 h-4 cursor-pointer logo__menu-close"
       />
     </section>
     <!-- links -->
     <ul
-      class="flex flex-col md:flex-row gap-x-12 font-normal text-center text-lg uppercase tracking-widest text-white mt-8 md:mt-0 md:text-veryDarkBlue md:text-sm md:font-medium"
+      class="flex flex-col md:flex-row gap-x-12 font-normal text-center text-lg uppercase tracking-widest text-white mt-10 md:mt-0 md:text-veryDarkBlue md:text-sm md:font-medium"
     >
       <li
         class="border-t p-5 border-grayishBlue md:border-0 md:p-0 hover:text-softRed transition-colors duration-200"
@@ -49,7 +50,7 @@
       >
         <a
           href=""
-          class="md:py-3 md:px-8 rounded-lg text-gray-50 md:bg-softRed shadow-lg hover:bg-white hover:border-2 hover:border-softRed hover:text-softRed transition-all duration-200"
+          class="md:py-3 md:px-8 rounded-lg text-gray-50 md:bg-softRed shadow-lg font-medium py-3 px-6 md:hover:bg-white md:hover:border-2 md:hover:border-softRed md:hover:text-softRed transition-all duration-200"
           >login</a
         >
       </li>
@@ -57,8 +58,12 @@
 
     <!-- media account -->
     <section class="text-2xl text-white space-x-8 text-center mt-44 md:hidden">
-      <i class="fa-brands fa-square-facebook"></i>
-      <i class="fa-brands fa-twitter"></i>
+      <i
+        class="fa-brands fa-square-facebook hover:text-softRed transition-colors duration-200"
+      ></i>
+      <i
+        class="fa-brands fa-twitter hover:text-softRed transition-colors duration-200"
+      ></i>
     </section>
   </div>
 </nav>
@@ -76,31 +81,33 @@
     </section>
 
     <!-- banner about -->
-    <section class="text-center md:text-left md:order-1">
-      <h1
-        class="text-3xl text-veryDarkBlue md:leading-tight leading-tight md:text-5xl font-medium"
-      >
-        A Simple Bookmark Manager
-      </h1>
-      <p class="leading-normal mt-5 text-grayishBlue">
-        A clean and simple interface to organize your favourite websites. Open a
-        new browser tab and see your sites load instantly. Try it for free.
-      </p>
+    <div class="overflow-hidden">
+      <section class="text-center md:text-left md:order-1">
+        <h1
+          class="text-3xl text-veryDarkBlue md:leading-tight leading-tight md:text-5xl font-medium"
+        >
+          A Simple Bookmark Manager
+        </h1>
+        <p class="leading-normal mt-5 text-grayishBlue">
+          A clean and simple interface to organize your favourite websites. Open
+          a new browser tab and see your sites load instantly. Try it for free.
+        </p>
 
-      <section
-        class="flex flex-row justify-center md:justify-start gap-x-5 mt-8"
-      >
-        <button
-          class="bg-softBlue shadow-lg text-white rounded-lg font-medium py-3 px-6 hover:bg-white hover:border-2 hover:border-softBlue hover:text-softBlue transition-all duration-200"
+        <section
+          class="flex flex-row justify-center md:justify-start gap-x-5 mt-8"
         >
-          Get it on Chrome
-        </button>
-        <button
-          class="bg-gray-50 shadow-xl text-grayishBlue rounded-lg font-medium py-3 px-6 hover:bg-white hover:border-2 hover:border-veryDarkBlue hover:text-veryDarkBlue transition-all duration-200"
-        >
-          Get it on Firefox
-        </button>
+          <button
+            class="bg-softBlue shadow-lg text-white rounded-lg font-medium py-3 px-6 hover:bg-white hover:border-2 hover:border-softBlue hover:text-softBlue transition-all duration-200"
+          >
+            Get it on Chrome
+          </button>
+          <button
+            class="bg-gray-50 shadow-xl text-grayishBlue rounded-lg font-medium py-3 px-6 hover:bg-white hover:border-2 hover:border-veryDarkBlue hover:text-veryDarkBlue transition-all duration-200"
+          >
+            Get it on Firefox
+          </button>
+        </section>
       </section>
-    </section>
+    </div>
   </div>
 </div>

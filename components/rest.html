@@ -1,0 +1,302 @@
+<!-- ============================= banner and nav =========== -->
+<!-- =============nav-===================== -->
+
+<nav
+  class="nav px-8 flex flex-row md:max-w-7xl md:mx-auto md:items-center md:px-8 flex-wrap justify-between items-center pt-5 font-sans"
+>
+  <!-- logo -->
+
+  <img src="./images/logo-bookmark.svg" class="main__logo-default" alt="logo" />
+
+  <!-- menu icons-->
+  <section class="md:hidden">
+    <img src="./images/icon-hamburger.svg" alt="menu" class="logo__menu-open" />
+  </section>
+
+  <!-- menu -->
+  <div
+    class="main__nav bg-veryDarkBlue hidden md:items-center pt-8 md:pt-0 px-8 md:px-0 h-screen w-full md:contents"
+  >
+    <!-- logos -->
+    <section class="flex flex-row justify-between md:hidden">
+      <img src="./images/logo2.svg" alt="" class="main__logo-edit" />
+      <img
+        src="./images/icon-close.svg"
+        alt="close"
+        class="w-4 h-4 cursor-pointer logo__menu-close"
+      />
+    </section>
+    <!-- links -->
+    <ul
+      class="flex flex-col md:flex-row gap-x-12 font-normal text-center text-lg uppercase tracking-widest text-white mt-10 md:mt-0 md:text-veryDarkBlue md:text-sm md:font-medium"
+    >
+      <li
+        class="border-t p-5 border-grayishBlue md:border-0 md:p-0 hover:text-softRed transition-colors duration-200"
+      >
+        <a href="">features</a>
+      </li>
+      <li
+        class="border-t p-5 border-grayishBlue md:border-0 md:p-0 hover:text-softRed transition-colors duration-200"
+      >
+        <a href="">pricing</a>
+      </li>
+      <li
+        class="border-y p-5 border-grayishBlue md:border-0 md:p-0 hover:text-softRed transition-colors duration-200"
+      >
+        <a href="">contact</a>
+      </li>
+      <li
+        class="border-2 border-white py-3 mt-5 md:py-0 md:mt-0 md:rounded-none rounded-lg font-medium text-xl md:border-0 md:p-0 md:text-sm"
+      >
+        <a
+          href=""
+          class="md:py-3 md:px-8 rounded-lg text-gray-50 md:bg-softRed shadow-lg font-medium py-3 px-6 md:hover:bg-white md:hover:border-2 md:hover:border-softRed md:hover:text-softRed transition-all duration-200"
+          >login</a
+        >
+      </li>
+    </ul>
+
+    <!-- media account -->
+    <section class="text-2xl text-white space-x-8 text-center mt-44 md:hidden">
+      <i
+        class="fa-brands fa-square-facebook hover:text-softRed transition-colors duration-200"
+      ></i>
+      <i
+        class="fa-brands fa-twitter hover:text-softRed transition-colors duration-200"
+      ></i>
+    </section>
+  </div>
+</nav>
+
+<!--============== banner=================== -->
+<div class="max-w-lg px-8 mx-auto md:max-w-7xl md:mx-auto relative">
+  <div class="grid grid-cols-1 gap-14 mt-20 md:grid-cols-2 md:items-center">
+    <!-- blue background -->
+    <section
+      class="h-44 w-[100%] md:w-[50%] md:h-64 rounded-l-full bg-softBlue absolute -right-40 top-16 md:top-20 lg:top-32 -z-10"
+    ></section>
+    <!-- hero -->
+    <section class="md:order-2">
+      <img src="./images/illustration-hero.svg" alt="" class="w-full" />
+    </section>
+
+    <!-- banner about -->
+    <div class="overflow-hidden">
+      <section class="text-center md:text-left md:order-1">
+        <h1
+          class="text-3xl text-veryDarkBlue md:leading-tight leading-tight md:text-5xl font-medium"
+        >
+          A Simple Bookmark Manager
+        </h1>
+        <p class="leading-normal mt-5 text-grayishBlue">
+          A clean and simple interface to organize your favourite websites. Open
+          a new browser tab and see your sites load instantly. Try it for free.
+        </p>
+
+        <section
+          class="flex flex-row justify-center md:justify-start gap-x-5 mt-8"
+        >
+          <button
+            class="bg-softBlue shadow-lg text-white rounded-lg font-medium py-3 px-6 hover:bg-white hover:border-2 hover:border-softBlue hover:text-softBlue transition-all duration-200"
+          >
+            Get it on Chrome
+          </button>
+          <button
+            class="bg-gray-50 shadow-xl text-grayishBlue rounded-lg font-medium py-3 px-6 hover:bg-white hover:border-2 hover:border-veryDarkBlue hover:text-veryDarkBlue transition-all duration-200"
+          >
+            Get it on Firefox
+          </button>
+        </section>
+      </section>
+    </div>
+  </div>
+</div>
+
+<!-- =============================features block================== -->
+<div class="px-8 mt-20">
+  <!--==============features heading and paragraph -->
+  <div class="text-center">
+    <h2
+      class="text-2xl text-veryDarkBlue md:leading-tight leading-tight font-medium"
+    >
+      Features
+    </h2>
+    <p class="leading-normal mt-5 text-grayishBlue md:max-w-lg md:mx-auto">
+      Our aim is to make it quick and easy for you to access your favourite
+      websites. Your bookmarks sync between your devices so you can access them
+      on the go.
+    </p>
+  </div>
+
+  <!-- ===========features type -->
+  <ul
+    class="flex flex-col md:flex-row text-grayishBlue md:justify-between md:pb-4 md:border-b md:border-opacity-50 max-w-md mx-auto md:max-w-3xl md:mx-auto border-gray-300 font-medium text-center mt-10 md:mt-14"
+  >
+    <li class="border-y border-gray-300 py-3 border-opacity-50 md:border-0">
+      <span
+        class="active:text-veryDarkBlue cursor-pointer simple__bookmarking hover:text-softRed md:px-8 hover:border-b-4 hover:border-softRed py-3 md:py-7 transition-all duration-200"
+        >Simple Bookmarking</span
+      >
+    </li>
+    <li class="border-b border-gray-300 border-opacity-50 py-3 md:border-0">
+      <span
+        class="speedy__searching cursor-pointer active:text-veryDarkBlue hover:text-softRed md:px-8 hover:border-b-4 hover:border-softRed py-3 md:py-7 transition-all duration-200"
+        >Speedy Searching</span
+      >
+    </li>
+    <li class="border-b border-gray-300 border-opacity-50 py-3 md:border-0">
+      <span
+        class="cursor-pointer active:text-veryDarkBlue easy__sharing hover:text-softRed md:px-8 hover:border-b-4 hover:border-softRed py-3 md:py-7 transition-all duration-200"
+        >Easy Sharing</span
+      >
+    </li>
+  </ul>
+
+  <!-- =============================features banner (tab 1)================== -->
+  <div class="max-w-lg px-8 mx-auto md:max-w-6xl md:mx-auto relative pb-32">
+    <div class="grid grid-cols-1 gap-28 mt-20 md:grid-cols-2 md:items-center">
+      <!-- blue background -->
+      <section
+        class="h-44 w-[100%] md:w-[50%] sm:h-64 md:h-72 lg:h-64 rounded-r-full bg-softBlue absolute -left-40 top-16 md:top-20 lg:top-32 -z-10"
+      ></section>
+      <!-- hero -->
+      <section class="md:order-1 features__hero">
+        <img
+          src="./images/illustration-features-tab-1.svg"
+          alt=""
+          class="w-full"
+        />
+      </section>
+
+      <!-- banner about -->
+      <section class="text-center md:text-left md:order-2">
+        <h1
+          class="features__heading text-2xl text-veryDarkBlue md:leading-tight leading-tight md:text-3xl font-medium"
+        >
+          Bookmark in one click
+        </h1>
+        <p
+          class="features__info leading-normal mt-5 text-grayishBlue md:max-w-md"
+        >
+          Organize your bookmarks however you like. Our simple drag-and-drop
+          interface gives you complete control over how you manage your
+          favourite sites.
+        </p>
+
+        <section
+          class="flex flex-row justify-center md:justify-start gap-x-5 mt-8"
+        >
+          <button
+            class="bg-softBlue shadow-lg text-white rounded-lg font-medium py-3 px-6 hover:bg-white hover:border-2 hover:border-softBlue hover:text-softBlue transition-all duration-200"
+          >
+            More Info
+          </button>
+        </section>
+      </section>
+    </div>
+  </div>
+</div>
+
+<!-- ==========================extension download======= -->
+<div class="max-w-md mx-auto mt-20 space-y-8 md:max-w-4xl px-6">
+  <!-- ===========extension download header -->
+  <div class="text-center">
+    <h2
+      class="text-2xl text-veryDarkBlue md:leading-tight leading-tight font-medium"
+    >
+      Download the extension
+    </h2>
+    <p class="leading-normal mt-5 text-grayishBlue md:max-w-lg md:mx-auto">
+      We’ve got more browsers in the pipeline. Please do let us know if you’ve
+      got a favourite you’d like us to prioritize.
+    </p>
+  </div>
+
+  <!-- ===============extension download browser -->
+  <div class="flex flex-col gap-10 md:gap-5 py-10 md:flex-row md:h-[500px]">
+    <!-- chrome browser -->
+    <div
+      class="flex flex-col self-start items-center py-10 shadow-xl max-w-sm mx-auto rounded-xl"
+    >
+      <section>
+        <img src="./images/logo-chrome.svg" alt="" class="h-20" />
+      </section>
+      <h2
+        class="text-xl mt-8 text-veryDarkBlue md:leading-tight leading-tight font-medium"
+      >
+        Add to Chrome
+      </h2>
+      <p class="leading-normal mt-2 text-grayishBlue md:max-w-lg md:mx-auto">
+        Minimum version 62
+      </p>
+      <img src="/images/bg-dots.svg" alt="" class="mt-8" />
+      <button
+        class="bg-softBlue mt-6 shadow-lg text-white rounded-lg font-medium py-3 px-6 hover:bg-white hover:border-2 hover:border-softBlue hover:text-softBlue transition-all duration-200"
+      >
+        Add & Install Extension
+      </button>
+    </div>
+
+    <!-- firefox browser -->
+    <div
+      class="flex flex-col self-center items-center py-10 shadow-xl max-w-sm mx-auto rounded-xl"
+    >
+      <section>
+        <img src="./images/logo-firefox.svg" alt="" class="h-20" />
+      </section>
+      <h2
+        class="text-xl mt-8 text-veryDarkBlue md:leading-tight leading-tight font-medium"
+      >
+        Add to Firefox
+      </h2>
+      <p class="leading-normal mt-2 text-grayishBlue md:max-w-lg md:mx-auto">
+        Minimum version 55
+      </p>
+      <img src="/images/bg-dots.svg" alt="" class="mt-8" />
+      <button
+        class="bg-softBlue mt-6 shadow-lg text-white rounded-lg font-medium py-3 px-6 hover:bg-white hover:border-2 hover:border-softBlue hover:text-softBlue transition-all duration-200"
+      >
+        Add & Install Extension
+      </button>
+    </div>
+
+    <!-- opera browser -->
+    <div
+      class="flex flex-col self-end items-center py-10 shadow-xl max-w-sm mx-auto rounded-xl"
+    >
+      <section>
+        <img src="./images/logo-opera.svg" alt="" class="h-20" />
+      </section>
+      <h2
+        class="text-xl mt-8 text-veryDarkBlue md:leading-tight leading-tight font-medium"
+      >
+        Add to Opera
+      </h2>
+      <p class="leading-normal mt-2 text-grayishBlue md:max-w-lg md:mx-auto">
+        Minimum version 46
+      </p>
+      <img src="/images/bg-dots.svg" alt="" class="mt-8" />
+      <button
+        class="bg-softBlue mt-6 shadow-lg text-white rounded-lg font-medium py-3 px-6 hover:bg-white hover:border-2 hover:border-softBlue hover:text-softBlue transition-all duration-200"
+      >
+        Add & Install Extension
+      </button>
+    </div>
+  </div>
+</div>
+
+<!--=================================== faq block================================== -->
+<div class="max-w-md mt-20 mx-auto px-8 md:max-w-xl">
+  <!-- faq header -->
+  <div class="text-center">
+    <h2
+      class="text-2xl text-veryDarkBlue md:leading-tight leading-tight font-medium"
+    >
+      Frequently Asked Questions
+    </h2>
+    <p class="leading-normal mt-5 text-grayishBlue md:max-w-lg md:mx-auto">
+      Here are some of our FAQs. If you have any other questions you’d like
+      answered please feel free to email us.
+    </p>
+  </div>
+</div>
